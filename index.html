@@ -2,20 +2,64 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <title> Sensive's Portfolio</title>
+  <meta charset="UTF-8">
+  <title>CSS Flag Project</title>
+  <style>
+    /* Write your CSS Code here */
+    .flag{
+      width: 900px;
+      height: 600px;
+      background-color: brown;
+      position: relative;
+    }
+    .flag >div{
+      width: 100%;
+      height: 300px;
+      background-color: rgb(19, 19, 78);
+      position: absolute;
+      top: 150px;
+    }
+
+    .flag >div >div{
+     width: 200px; 
+     height: 200px;
+     background-color: white;
+     border-radius: 50%;
+     position: relative;
+     top: 50px;
+     left: 350px;
+    }
+    p{
+      margin:0;
+      font-size: 5rem;
+      text-align: center;
+      color: white; 
+    }
+    body > div > div> div >p{
+      color: black;
+    }
+  </style>
 </head>
 
+<!-- 
+  IMPORTANT! Do not change any HTML
+Don't add any classes/ids/elements 
+Use what you know about combining selectors 
+and CSS specificity instead.
+Hint 1: The flag is 900px by 600px and the circle is 200px by 200px.
+Hint 2: You can use CSS inspection to get the colors from
+https://appbrewery.github.io/flag-of-laos/
+-->
+
 <body>
-    <h1>Sensive's Portfolio</h1>
-    <h2>I am a developer</h2>
-    <h3><a href="./public/birthday-invite.html">A birthday invite</a></h3>
-    <img src="./assets/images/birthday-invite.png" height="200" alt="A birthday invite" />
-    <h3><a href="./public/movie-ranking.html">A movie ranking project</a></h3>
-    <img src="./assets/images/movie-ranking.png" height="200" alt="Movie project preview" />
-    <hr />
-    <a href="./public/about.html">About me</a>
-    <a href="./public/contact.html">contact me</a>
+  <div class="flag">
+    <p>The Flag</p>
+    <div>
+      <div>
+        <p>of Laos</p>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>
